@@ -17,6 +17,7 @@
             width: 80%;
             margin: auto;
             direction: rtl;
+            position: relative;
         }
 
         .parent .title {
@@ -32,6 +33,20 @@
             direction: rtl;
             margin-top: 1rem;
             margin-bottom: 1rem;
+        }
+
+        .parent .bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image:url("./images/mark_logo.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: .09;
+            background-size: 500px 600px;
+            z-index: -1;
+            right: 0;
+            left: 0;
         }
 
         footer {
@@ -50,6 +65,7 @@
 
 <body>
     <div class="parent">
+        <div class="bg"></div>
         <header>
             <table>
                 <tr>
